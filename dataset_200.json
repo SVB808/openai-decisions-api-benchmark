@@ -1,0 +1,1202 @@
+[
+  {
+    "id": "bil-01-1",
+    "text": "my invoice has the wrong tax amount?",
+    "label": "billing",
+    "scenario_group": "billing-01"
+  },
+  {
+    "id": "bil-01-2",
+    "text": "Hello, my invoice has the wrong tax amount. Please advise.",
+    "label": "billing",
+    "scenario_group": "billing-01"
+  },
+  {
+    "id": "bil-01-3",
+    "text": "Quick question: my invoice has the wrong tax amount?",
+    "label": "billing",
+    "scenario_group": "billing-01"
+  },
+  {
+    "id": "bil-01-4",
+    "text": "Could someone help with this: my invoice has the wrong tax amount?",
+    "label": "billing",
+    "scenario_group": "billing-01"
+  },
+  {
+    "id": "bil-01-5",
+    "text": "I am contacting support because my invoice has the wrong tax amount.",
+    "label": "billing",
+    "scenario_group": "billing-01"
+  },
+  {
+    "id": "bil-02-1",
+    "text": "i was billed twice for one purchase?",
+    "label": "billing",
+    "scenario_group": "billing-02"
+  },
+  {
+    "id": "bil-02-2",
+    "text": "Hello, i was billed twice for one purchase. Please advise.",
+    "label": "billing",
+    "scenario_group": "billing-02"
+  },
+  {
+    "id": "bil-02-3",
+    "text": "Quick question: i was billed twice for one purchase?",
+    "label": "billing",
+    "scenario_group": "billing-02"
+  },
+  {
+    "id": "bil-02-4",
+    "text": "Could someone help with this: i was billed twice for one purchase?",
+    "label": "billing",
+    "scenario_group": "billing-02"
+  },
+  {
+    "id": "bil-02-5",
+    "text": "I am contacting support because i was billed twice for one purchase.",
+    "label": "billing",
+    "scenario_group": "billing-02"
+  },
+  {
+    "id": "bil-03-1",
+    "text": "please refund the payment for the canceled subscription?",
+    "label": "billing",
+    "scenario_group": "billing-03"
+  },
+  {
+    "id": "bil-03-2",
+    "text": "Hello, please refund the payment for the canceled subscription. Please advise.",
+    "label": "billing",
+    "scenario_group": "billing-03"
+  },
+  {
+    "id": "bil-03-3",
+    "text": "Quick question: please refund the payment for the canceled subscription?",
+    "label": "billing",
+    "scenario_group": "billing-03"
+  },
+  {
+    "id": "bil-03-4",
+    "text": "Could someone help with this: please refund the payment for the canceled subscription?",
+    "label": "billing",
+    "scenario_group": "billing-03"
+  },
+  {
+    "id": "bil-03-5",
+    "text": "I am contacting support because please refund the payment for the canceled subscription.",
+    "label": "billing",
+    "scenario_group": "billing-03"
+  },
+  {
+    "id": "bil-04-1",
+    "text": "my card was charged after I canceled?",
+    "label": "billing",
+    "scenario_group": "billing-04"
+  },
+  {
+    "id": "bil-04-2",
+    "text": "Hello, my card was charged after I canceled. Please advise.",
+    "label": "billing",
+    "scenario_group": "billing-04"
+  },
+  {
+    "id": "bil-04-3",
+    "text": "Quick question: my card was charged after I canceled?",
+    "label": "billing",
+    "scenario_group": "billing-04"
+  },
+  {
+    "id": "bil-04-4",
+    "text": "Could someone help with this: my card was charged after I canceled?",
+    "label": "billing",
+    "scenario_group": "billing-04"
+  },
+  {
+    "id": "bil-04-5",
+    "text": "I am contacting support because my card was charged after I canceled.",
+    "label": "billing",
+    "scenario_group": "billing-04"
+  },
+  {
+    "id": "bil-05-1",
+    "text": "i cannot download my payment receipt?",
+    "label": "billing",
+    "scenario_group": "billing-05"
+  },
+  {
+    "id": "bil-05-2",
+    "text": "Hello, i cannot download my payment receipt. Please advise.",
+    "label": "billing",
+    "scenario_group": "billing-05"
+  },
+  {
+    "id": "bil-05-3",
+    "text": "Quick question: i cannot download my payment receipt?",
+    "label": "billing",
+    "scenario_group": "billing-05"
+  },
+  {
+    "id": "bil-05-4",
+    "text": "Could someone help with this: i cannot download my payment receipt?",
+    "label": "billing",
+    "scenario_group": "billing-05"
+  },
+  {
+    "id": "bil-05-5",
+    "text": "I am contacting support because i cannot download my payment receipt.",
+    "label": "billing",
+    "scenario_group": "billing-05"
+  },
+  {
+    "id": "bil-06-1",
+    "text": "the promo code did not reduce my total?",
+    "label": "billing",
+    "scenario_group": "billing-06"
+  },
+  {
+    "id": "bil-06-2",
+    "text": "Hello, the promo code did not reduce my total. Please advise.",
+    "label": "billing",
+    "scenario_group": "billing-06"
+  },
+  {
+    "id": "bil-06-3",
+    "text": "Quick question: the promo code did not reduce my total?",
+    "label": "billing",
+    "scenario_group": "billing-06"
+  },
+  {
+    "id": "bil-06-4",
+    "text": "Could someone help with this: the promo code did not reduce my total?",
+    "label": "billing",
+    "scenario_group": "billing-06"
+  },
+  {
+    "id": "bil-06-5",
+    "text": "I am contacting support because the promo code did not reduce my total.",
+    "label": "billing",
+    "scenario_group": "billing-06"
+  },
+  {
+    "id": "bil-07-1",
+    "text": "why is my renewal price higher?",
+    "label": "billing",
+    "scenario_group": "billing-07"
+  },
+  {
+    "id": "bil-07-2",
+    "text": "Hello, why is my renewal price higher. Please advise.",
+    "label": "billing",
+    "scenario_group": "billing-07"
+  },
+  {
+    "id": "bil-07-3",
+    "text": "Quick question: why is my renewal price higher?",
+    "label": "billing",
+    "scenario_group": "billing-07"
+  },
+  {
+    "id": "bil-07-4",
+    "text": "Could someone help with this: why is my renewal price higher?",
+    "label": "billing",
+    "scenario_group": "billing-07"
+  },
+  {
+    "id": "bil-07-5",
+    "text": "I am contacting support because why is my renewal price higher.",
+    "label": "billing",
+    "scenario_group": "billing-07"
+  },
+  {
+    "id": "bil-08-1",
+    "text": "i need to update my billing address?",
+    "label": "billing",
+    "scenario_group": "billing-08"
+  },
+  {
+    "id": "bil-08-2",
+    "text": "Hello, i need to update my billing address. Please advise.",
+    "label": "billing",
+    "scenario_group": "billing-08"
+  },
+  {
+    "id": "bil-08-3",
+    "text": "Quick question: i need to update my billing address?",
+    "label": "billing",
+    "scenario_group": "billing-08"
+  },
+  {
+    "id": "bil-08-4",
+    "text": "Could someone help with this: i need to update my billing address?",
+    "label": "billing",
+    "scenario_group": "billing-08"
+  },
+  {
+    "id": "bil-08-5",
+    "text": "I am contacting support because i need to update my billing address.",
+    "label": "billing",
+    "scenario_group": "billing-08"
+  },
+  {
+    "id": "bil-09-1",
+    "text": "my card payment was declined?",
+    "label": "billing",
+    "scenario_group": "billing-09"
+  },
+  {
+    "id": "bil-09-2",
+    "text": "Hello, my card payment was declined. Please advise.",
+    "label": "billing",
+    "scenario_group": "billing-09"
+  },
+  {
+    "id": "bil-09-3",
+    "text": "Quick question: my card payment was declined?",
+    "label": "billing",
+    "scenario_group": "billing-09"
+  },
+  {
+    "id": "bil-09-4",
+    "text": "Could someone help with this: my card payment was declined?",
+    "label": "billing",
+    "scenario_group": "billing-09"
+  },
+  {
+    "id": "bil-09-5",
+    "text": "I am contacting support because my card payment was declined.",
+    "label": "billing",
+    "scenario_group": "billing-09"
+  },
+  {
+    "id": "bil-10-1",
+    "text": "can you explain this unexpected service fee?",
+    "label": "billing",
+    "scenario_group": "billing-10"
+  },
+  {
+    "id": "bil-10-2",
+    "text": "Hello, can you explain this unexpected service fee. Please advise.",
+    "label": "billing",
+    "scenario_group": "billing-10"
+  },
+  {
+    "id": "bil-10-3",
+    "text": "Quick question: can you explain this unexpected service fee?",
+    "label": "billing",
+    "scenario_group": "billing-10"
+  },
+  {
+    "id": "bil-10-4",
+    "text": "Could someone help with this: can you explain this unexpected service fee?",
+    "label": "billing",
+    "scenario_group": "billing-10"
+  },
+  {
+    "id": "bil-10-5",
+    "text": "I am contacting support because can you explain this unexpected service fee.",
+    "label": "billing",
+    "scenario_group": "billing-10"
+  },
+  {
+    "id": "tec-01-1",
+    "text": "the dashboard crashes when opening reports?",
+    "label": "technical",
+    "scenario_group": "technical-01"
+  },
+  {
+    "id": "tec-01-2",
+    "text": "Hello, the dashboard crashes when opening reports. Please advise.",
+    "label": "technical",
+    "scenario_group": "technical-01"
+  },
+  {
+    "id": "tec-01-3",
+    "text": "Quick question: the dashboard crashes when opening reports?",
+    "label": "technical",
+    "scenario_group": "technical-01"
+  },
+  {
+    "id": "tec-01-4",
+    "text": "Could someone help with this: the dashboard crashes when opening reports?",
+    "label": "technical",
+    "scenario_group": "technical-01"
+  },
+  {
+    "id": "tec-01-5",
+    "text": "I am contacting support because the dashboard crashes when opening reports.",
+    "label": "technical",
+    "scenario_group": "technical-01"
+  },
+  {
+    "id": "tec-02-1",
+    "text": "login fails with an authentication error?",
+    "label": "technical",
+    "scenario_group": "technical-02"
+  },
+  {
+    "id": "tec-02-2",
+    "text": "Hello, login fails with an authentication error. Please advise.",
+    "label": "technical",
+    "scenario_group": "technical-02"
+  },
+  {
+    "id": "tec-02-3",
+    "text": "Quick question: login fails with an authentication error?",
+    "label": "technical",
+    "scenario_group": "technical-02"
+  },
+  {
+    "id": "tec-02-4",
+    "text": "Could someone help with this: login fails with an authentication error?",
+    "label": "technical",
+    "scenario_group": "technical-02"
+  },
+  {
+    "id": "tec-02-5",
+    "text": "I am contacting support because login fails with an authentication error.",
+    "label": "technical",
+    "scenario_group": "technical-02"
+  },
+  {
+    "id": "tec-03-1",
+    "text": "the export button does nothing?",
+    "label": "technical",
+    "scenario_group": "technical-03"
+  },
+  {
+    "id": "tec-03-2",
+    "text": "Hello, the export button does nothing. Please advise.",
+    "label": "technical",
+    "scenario_group": "technical-03"
+  },
+  {
+    "id": "tec-03-3",
+    "text": "Quick question: the export button does nothing?",
+    "label": "technical",
+    "scenario_group": "technical-03"
+  },
+  {
+    "id": "tec-03-4",
+    "text": "Could someone help with this: the export button does nothing?",
+    "label": "technical",
+    "scenario_group": "technical-03"
+  },
+  {
+    "id": "tec-03-5",
+    "text": "I am contacting support because the export button does nothing.",
+    "label": "technical",
+    "scenario_group": "technical-03"
+  },
+  {
+    "id": "tec-04-1",
+    "text": "the mobile application freezes on startup?",
+    "label": "technical",
+    "scenario_group": "technical-04"
+  },
+  {
+    "id": "tec-04-2",
+    "text": "Hello, the mobile application freezes on startup. Please advise.",
+    "label": "technical",
+    "scenario_group": "technical-04"
+  },
+  {
+    "id": "tec-04-3",
+    "text": "Quick question: the mobile application freezes on startup?",
+    "label": "technical",
+    "scenario_group": "technical-04"
+  },
+  {
+    "id": "tec-04-4",
+    "text": "Could someone help with this: the mobile application freezes on startup?",
+    "label": "technical",
+    "scenario_group": "technical-04"
+  },
+  {
+    "id": "tec-04-5",
+    "text": "I am contacting support because the mobile application freezes on startup.",
+    "label": "technical",
+    "scenario_group": "technical-04"
+  },
+  {
+    "id": "tec-05-1",
+    "text": "the website shows a 500 error?",
+    "label": "technical",
+    "scenario_group": "technical-05"
+  },
+  {
+    "id": "tec-05-2",
+    "text": "Hello, the website shows a 500 error. Please advise.",
+    "label": "technical",
+    "scenario_group": "technical-05"
+  },
+  {
+    "id": "tec-05-3",
+    "text": "Quick question: the website shows a 500 error?",
+    "label": "technical",
+    "scenario_group": "technical-05"
+  },
+  {
+    "id": "tec-05-4",
+    "text": "Could someone help with this: the website shows a 500 error?",
+    "label": "technical",
+    "scenario_group": "technical-05"
+  },
+  {
+    "id": "tec-05-5",
+    "text": "I am contacting support because the website shows a 500 error.",
+    "label": "technical",
+    "scenario_group": "technical-05"
+  },
+  {
+    "id": "tec-06-1",
+    "text": "the upload fails at 90 percent?",
+    "label": "technical",
+    "scenario_group": "technical-06"
+  },
+  {
+    "id": "tec-06-2",
+    "text": "Hello, the upload fails at 90 percent. Please advise.",
+    "label": "technical",
+    "scenario_group": "technical-06"
+  },
+  {
+    "id": "tec-06-3",
+    "text": "Quick question: the upload fails at 90 percent?",
+    "label": "technical",
+    "scenario_group": "technical-06"
+  },
+  {
+    "id": "tec-06-4",
+    "text": "Could someone help with this: the upload fails at 90 percent?",
+    "label": "technical",
+    "scenario_group": "technical-06"
+  },
+  {
+    "id": "tec-06-5",
+    "text": "I am contacting support because the upload fails at 90 percent.",
+    "label": "technical",
+    "scenario_group": "technical-06"
+  },
+  {
+    "id": "tec-07-1",
+    "text": "notifications are not being delivered?",
+    "label": "technical",
+    "scenario_group": "technical-07"
+  },
+  {
+    "id": "tec-07-2",
+    "text": "Hello, notifications are not being delivered. Please advise.",
+    "label": "technical",
+    "scenario_group": "technical-07"
+  },
+  {
+    "id": "tec-07-3",
+    "text": "Quick question: notifications are not being delivered?",
+    "label": "technical",
+    "scenario_group": "technical-07"
+  },
+  {
+    "id": "tec-07-4",
+    "text": "Could someone help with this: notifications are not being delivered?",
+    "label": "technical",
+    "scenario_group": "technical-07"
+  },
+  {
+    "id": "tec-07-5",
+    "text": "I am contacting support because notifications are not being delivered.",
+    "label": "technical",
+    "scenario_group": "technical-07"
+  },
+  {
+    "id": "tec-08-1",
+    "text": "the search page takes a minute to load?",
+    "label": "technical",
+    "scenario_group": "technical-08"
+  },
+  {
+    "id": "tec-08-2",
+    "text": "Hello, the search page takes a minute to load. Please advise.",
+    "label": "technical",
+    "scenario_group": "technical-08"
+  },
+  {
+    "id": "tec-08-3",
+    "text": "Quick question: the search page takes a minute to load?",
+    "label": "technical",
+    "scenario_group": "technical-08"
+  },
+  {
+    "id": "tec-08-4",
+    "text": "Could someone help with this: the search page takes a minute to load?",
+    "label": "technical",
+    "scenario_group": "technical-08"
+  },
+  {
+    "id": "tec-08-5",
+    "text": "I am contacting support because the search page takes a minute to load.",
+    "label": "technical",
+    "scenario_group": "technical-08"
+  },
+  {
+    "id": "tec-09-1",
+    "text": "password reset links return an error?",
+    "label": "technical",
+    "scenario_group": "technical-09"
+  },
+  {
+    "id": "tec-09-2",
+    "text": "Hello, password reset links return an error. Please advise.",
+    "label": "technical",
+    "scenario_group": "technical-09"
+  },
+  {
+    "id": "tec-09-3",
+    "text": "Quick question: password reset links return an error?",
+    "label": "technical",
+    "scenario_group": "technical-09"
+  },
+  {
+    "id": "tec-09-4",
+    "text": "Could someone help with this: password reset links return an error?",
+    "label": "technical",
+    "scenario_group": "technical-09"
+  },
+  {
+    "id": "tec-09-5",
+    "text": "I am contacting support because password reset links return an error.",
+    "label": "technical",
+    "scenario_group": "technical-09"
+  },
+  {
+    "id": "tec-10-1",
+    "text": "the app displays corrupted characters?",
+    "label": "technical",
+    "scenario_group": "technical-10"
+  },
+  {
+    "id": "tec-10-2",
+    "text": "Hello, the app displays corrupted characters. Please advise.",
+    "label": "technical",
+    "scenario_group": "technical-10"
+  },
+  {
+    "id": "tec-10-3",
+    "text": "Quick question: the app displays corrupted characters?",
+    "label": "technical",
+    "scenario_group": "technical-10"
+  },
+  {
+    "id": "tec-10-4",
+    "text": "Could someone help with this: the app displays corrupted characters?",
+    "label": "technical",
+    "scenario_group": "technical-10"
+  },
+  {
+    "id": "tec-10-5",
+    "text": "I am contacting support because the app displays corrupted characters.",
+    "label": "technical",
+    "scenario_group": "technical-10"
+  },
+  {
+    "id": "shi-01-1",
+    "text": "my package has not arrived after the delivery date?",
+    "label": "shipping",
+    "scenario_group": "shipping-01"
+  },
+  {
+    "id": "shi-01-2",
+    "text": "Hello, my package has not arrived after the delivery date. Please advise.",
+    "label": "shipping",
+    "scenario_group": "shipping-01"
+  },
+  {
+    "id": "shi-01-3",
+    "text": "Quick question: my package has not arrived after the delivery date?",
+    "label": "shipping",
+    "scenario_group": "shipping-01"
+  },
+  {
+    "id": "shi-01-4",
+    "text": "Could someone help with this: my package has not arrived after the delivery date?",
+    "label": "shipping",
+    "scenario_group": "shipping-01"
+  },
+  {
+    "id": "shi-01-5",
+    "text": "I am contacting support because my package has not arrived after the delivery date.",
+    "label": "shipping",
+    "scenario_group": "shipping-01"
+  },
+  {
+    "id": "shi-02-1",
+    "text": "where can I find my parcel tracking link?",
+    "label": "shipping",
+    "scenario_group": "shipping-02"
+  },
+  {
+    "id": "shi-02-2",
+    "text": "Hello, where can I find my parcel tracking link. Please advise.",
+    "label": "shipping",
+    "scenario_group": "shipping-02"
+  },
+  {
+    "id": "shi-02-3",
+    "text": "Quick question: where can I find my parcel tracking link?",
+    "label": "shipping",
+    "scenario_group": "shipping-02"
+  },
+  {
+    "id": "shi-02-4",
+    "text": "Could someone help with this: where can I find my parcel tracking link?",
+    "label": "shipping",
+    "scenario_group": "shipping-02"
+  },
+  {
+    "id": "shi-02-5",
+    "text": "I am contacting support because where can I find my parcel tracking link.",
+    "label": "shipping",
+    "scenario_group": "shipping-02"
+  },
+  {
+    "id": "shi-03-1",
+    "text": "the tracking page says delivered but nothing arrived?",
+    "label": "shipping",
+    "scenario_group": "shipping-03"
+  },
+  {
+    "id": "shi-03-2",
+    "text": "Hello, the tracking page says delivered but nothing arrived. Please advise.",
+    "label": "shipping",
+    "scenario_group": "shipping-03"
+  },
+  {
+    "id": "shi-03-3",
+    "text": "Quick question: the tracking page says delivered but nothing arrived?",
+    "label": "shipping",
+    "scenario_group": "shipping-03"
+  },
+  {
+    "id": "shi-03-4",
+    "text": "Could someone help with this: the tracking page says delivered but nothing arrived?",
+    "label": "shipping",
+    "scenario_group": "shipping-03"
+  },
+  {
+    "id": "shi-03-5",
+    "text": "I am contacting support because the tracking page says delivered but nothing arrived.",
+    "label": "shipping",
+    "scenario_group": "shipping-03"
+  },
+  {
+    "id": "shi-04-1",
+    "text": "can I change the delivery address before dispatch?",
+    "label": "shipping",
+    "scenario_group": "shipping-04"
+  },
+  {
+    "id": "shi-04-2",
+    "text": "Hello, can I change the delivery address before dispatch. Please advise.",
+    "label": "shipping",
+    "scenario_group": "shipping-04"
+  },
+  {
+    "id": "shi-04-3",
+    "text": "Quick question: can I change the delivery address before dispatch?",
+    "label": "shipping",
+    "scenario_group": "shipping-04"
+  },
+  {
+    "id": "shi-04-4",
+    "text": "Could someone help with this: can I change the delivery address before dispatch?",
+    "label": "shipping",
+    "scenario_group": "shipping-04"
+  },
+  {
+    "id": "shi-04-5",
+    "text": "I am contacting support because can I change the delivery address before dispatch.",
+    "label": "shipping",
+    "scenario_group": "shipping-04"
+  },
+  {
+    "id": "shi-05-1",
+    "text": "the courier has delayed my shipment?",
+    "label": "shipping",
+    "scenario_group": "shipping-05"
+  },
+  {
+    "id": "shi-05-2",
+    "text": "Hello, the courier has delayed my shipment. Please advise.",
+    "label": "shipping",
+    "scenario_group": "shipping-05"
+  },
+  {
+    "id": "shi-05-3",
+    "text": "Quick question: the courier has delayed my shipment?",
+    "label": "shipping",
+    "scenario_group": "shipping-05"
+  },
+  {
+    "id": "shi-05-4",
+    "text": "Could someone help with this: the courier has delayed my shipment?",
+    "label": "shipping",
+    "scenario_group": "shipping-05"
+  },
+  {
+    "id": "shi-05-5",
+    "text": "I am contacting support because the courier has delayed my shipment.",
+    "label": "shipping",
+    "scenario_group": "shipping-05"
+  },
+  {
+    "id": "shi-06-1",
+    "text": "when will my replacement order ship?",
+    "label": "shipping",
+    "scenario_group": "shipping-06"
+  },
+  {
+    "id": "shi-06-2",
+    "text": "Hello, when will my replacement order ship. Please advise.",
+    "label": "shipping",
+    "scenario_group": "shipping-06"
+  },
+  {
+    "id": "shi-06-3",
+    "text": "Quick question: when will my replacement order ship?",
+    "label": "shipping",
+    "scenario_group": "shipping-06"
+  },
+  {
+    "id": "shi-06-4",
+    "text": "Could someone help with this: when will my replacement order ship?",
+    "label": "shipping",
+    "scenario_group": "shipping-06"
+  },
+  {
+    "id": "shi-06-5",
+    "text": "I am contacting support because when will my replacement order ship.",
+    "label": "shipping",
+    "scenario_group": "shipping-06"
+  },
+  {
+    "id": "shi-07-1",
+    "text": "the parcel went to the wrong city?",
+    "label": "shipping",
+    "scenario_group": "shipping-07"
+  },
+  {
+    "id": "shi-07-2",
+    "text": "Hello, the parcel went to the wrong city. Please advise.",
+    "label": "shipping",
+    "scenario_group": "shipping-07"
+  },
+  {
+    "id": "shi-07-3",
+    "text": "Quick question: the parcel went to the wrong city?",
+    "label": "shipping",
+    "scenario_group": "shipping-07"
+  },
+  {
+    "id": "shi-07-4",
+    "text": "Could someone help with this: the parcel went to the wrong city?",
+    "label": "shipping",
+    "scenario_group": "shipping-07"
+  },
+  {
+    "id": "shi-07-5",
+    "text": "I am contacting support because the parcel went to the wrong city.",
+    "label": "shipping",
+    "scenario_group": "shipping-07"
+  },
+  {
+    "id": "shi-08-1",
+    "text": "my order is awaiting carrier pickup?",
+    "label": "shipping",
+    "scenario_group": "shipping-08"
+  },
+  {
+    "id": "shi-08-2",
+    "text": "Hello, my order is awaiting carrier pickup. Please advise.",
+    "label": "shipping",
+    "scenario_group": "shipping-08"
+  },
+  {
+    "id": "shi-08-3",
+    "text": "Quick question: my order is awaiting carrier pickup?",
+    "label": "shipping",
+    "scenario_group": "shipping-08"
+  },
+  {
+    "id": "shi-08-4",
+    "text": "Could someone help with this: my order is awaiting carrier pickup?",
+    "label": "shipping",
+    "scenario_group": "shipping-08"
+  },
+  {
+    "id": "shi-08-5",
+    "text": "I am contacting support because my order is awaiting carrier pickup.",
+    "label": "shipping",
+    "scenario_group": "shipping-08"
+  },
+  {
+    "id": "shi-09-1",
+    "text": "the tracking number is not updating?",
+    "label": "shipping",
+    "scenario_group": "shipping-09"
+  },
+  {
+    "id": "shi-09-2",
+    "text": "Hello, the tracking number is not updating. Please advise.",
+    "label": "shipping",
+    "scenario_group": "shipping-09"
+  },
+  {
+    "id": "shi-09-3",
+    "text": "Quick question: the tracking number is not updating?",
+    "label": "shipping",
+    "scenario_group": "shipping-09"
+  },
+  {
+    "id": "shi-09-4",
+    "text": "Could someone help with this: the tracking number is not updating?",
+    "label": "shipping",
+    "scenario_group": "shipping-09"
+  },
+  {
+    "id": "shi-09-5",
+    "text": "I am contacting support because the tracking number is not updating.",
+    "label": "shipping",
+    "scenario_group": "shipping-09"
+  },
+  {
+    "id": "shi-10-1",
+    "text": "can I choose a different delivery date?",
+    "label": "shipping",
+    "scenario_group": "shipping-10"
+  },
+  {
+    "id": "shi-10-2",
+    "text": "Hello, can I choose a different delivery date. Please advise.",
+    "label": "shipping",
+    "scenario_group": "shipping-10"
+  },
+  {
+    "id": "shi-10-3",
+    "text": "Quick question: can I choose a different delivery date?",
+    "label": "shipping",
+    "scenario_group": "shipping-10"
+  },
+  {
+    "id": "shi-10-4",
+    "text": "Could someone help with this: can I choose a different delivery date?",
+    "label": "shipping",
+    "scenario_group": "shipping-10"
+  },
+  {
+    "id": "shi-10-5",
+    "text": "I am contacting support because can I choose a different delivery date.",
+    "label": "shipping",
+    "scenario_group": "shipping-10"
+  },
+  {
+    "id": "oth-01-1",
+    "text": "do you offer student internships?",
+    "label": "other",
+    "scenario_group": "other-01"
+  },
+  {
+    "id": "oth-01-2",
+    "text": "Hello, do you offer student internships. Please advise.",
+    "label": "other",
+    "scenario_group": "other-01"
+  },
+  {
+    "id": "oth-01-3",
+    "text": "Quick question: do you offer student internships?",
+    "label": "other",
+    "scenario_group": "other-01"
+  },
+  {
+    "id": "oth-01-4",
+    "text": "Could someone help with this: do you offer student internships?",
+    "label": "other",
+    "scenario_group": "other-01"
+  },
+  {
+    "id": "oth-01-5",
+    "text": "I am contacting support because do you offer student internships.",
+    "label": "other",
+    "scenario_group": "other-01"
+  },
+  {
+    "id": "oth-02-1",
+    "text": "where can I read your privacy policy?",
+    "label": "other",
+    "scenario_group": "other-02"
+  },
+  {
+    "id": "oth-02-2",
+    "text": "Hello, where can I read your privacy policy. Please advise.",
+    "label": "other",
+    "scenario_group": "other-02"
+  },
+  {
+    "id": "oth-02-3",
+    "text": "Quick question: where can I read your privacy policy?",
+    "label": "other",
+    "scenario_group": "other-02"
+  },
+  {
+    "id": "oth-02-4",
+    "text": "Could someone help with this: where can I read your privacy policy?",
+    "label": "other",
+    "scenario_group": "other-02"
+  },
+  {
+    "id": "oth-02-5",
+    "text": "I am contacting support because where can I read your privacy policy.",
+    "label": "other",
+    "scenario_group": "other-02"
+  },
+  {
+    "id": "oth-03-1",
+    "text": "can you add a dark mode setting?",
+    "label": "other",
+    "scenario_group": "other-03"
+  },
+  {
+    "id": "oth-03-2",
+    "text": "Hello, can you add a dark mode setting. Please advise.",
+    "label": "other",
+    "scenario_group": "other-03"
+  },
+  {
+    "id": "oth-03-3",
+    "text": "Quick question: can you add a dark mode setting?",
+    "label": "other",
+    "scenario_group": "other-03"
+  },
+  {
+    "id": "oth-03-4",
+    "text": "Could someone help with this: can you add a dark mode setting?",
+    "label": "other",
+    "scenario_group": "other-03"
+  },
+  {
+    "id": "oth-03-5",
+    "text": "I am contacting support because can you add a dark mode setting.",
+    "label": "other",
+    "scenario_group": "other-03"
+  },
+  {
+    "id": "oth-04-1",
+    "text": "what are your business opening hours?",
+    "label": "other",
+    "scenario_group": "other-04"
+  },
+  {
+    "id": "oth-04-2",
+    "text": "Hello, what are your business opening hours. Please advise.",
+    "label": "other",
+    "scenario_group": "other-04"
+  },
+  {
+    "id": "oth-04-3",
+    "text": "Quick question: what are your business opening hours?",
+    "label": "other",
+    "scenario_group": "other-04"
+  },
+  {
+    "id": "oth-04-4",
+    "text": "Could someone help with this: what are your business opening hours?",
+    "label": "other",
+    "scenario_group": "other-04"
+  },
+  {
+    "id": "oth-04-5",
+    "text": "I am contacting support because what are your business opening hours.",
+    "label": "other",
+    "scenario_group": "other-04"
+  },
+  {
+    "id": "oth-05-1",
+    "text": "i would like to suggest a new feature?",
+    "label": "other",
+    "scenario_group": "other-05"
+  },
+  {
+    "id": "oth-05-2",
+    "text": "Hello, i would like to suggest a new feature. Please advise.",
+    "label": "other",
+    "scenario_group": "other-05"
+  },
+  {
+    "id": "oth-05-3",
+    "text": "Quick question: i would like to suggest a new feature?",
+    "label": "other",
+    "scenario_group": "other-05"
+  },
+  {
+    "id": "oth-05-4",
+    "text": "Could someone help with this: i would like to suggest a new feature?",
+    "label": "other",
+    "scenario_group": "other-05"
+  },
+  {
+    "id": "oth-05-5",
+    "text": "I am contacting support because i would like to suggest a new feature.",
+    "label": "other",
+    "scenario_group": "other-05"
+  },
+  {
+    "id": "oth-06-1",
+    "text": "do you have a public product roadmap?",
+    "label": "other",
+    "scenario_group": "other-06"
+  },
+  {
+    "id": "oth-06-2",
+    "text": "Hello, do you have a public product roadmap. Please advise.",
+    "label": "other",
+    "scenario_group": "other-06"
+  },
+  {
+    "id": "oth-06-3",
+    "text": "Quick question: do you have a public product roadmap?",
+    "label": "other",
+    "scenario_group": "other-06"
+  },
+  {
+    "id": "oth-06-4",
+    "text": "Could someone help with this: do you have a public product roadmap?",
+    "label": "other",
+    "scenario_group": "other-06"
+  },
+  {
+    "id": "oth-06-5",
+    "text": "I am contacting support because do you have a public product roadmap.",
+    "label": "other",
+    "scenario_group": "other-06"
+  },
+  {
+    "id": "oth-07-1",
+    "text": "how can I apply for a job?",
+    "label": "other",
+    "scenario_group": "other-07"
+  },
+  {
+    "id": "oth-07-2",
+    "text": "Hello, how can I apply for a job. Please advise.",
+    "label": "other",
+    "scenario_group": "other-07"
+  },
+  {
+    "id": "oth-07-3",
+    "text": "Quick question: how can I apply for a job?",
+    "label": "other",
+    "scenario_group": "other-07"
+  },
+  {
+    "id": "oth-07-4",
+    "text": "Could someone help with this: how can I apply for a job?",
+    "label": "other",
+    "scenario_group": "other-07"
+  },
+  {
+    "id": "oth-07-5",
+    "text": "I am contacting support because how can I apply for a job.",
+    "label": "other",
+    "scenario_group": "other-07"
+  },
+  {
+    "id": "oth-08-1",
+    "text": "where is your company headquartered?",
+    "label": "other",
+    "scenario_group": "other-08"
+  },
+  {
+    "id": "oth-08-2",
+    "text": "Hello, where is your company headquartered. Please advise.",
+    "label": "other",
+    "scenario_group": "other-08"
+  },
+  {
+    "id": "oth-08-3",
+    "text": "Quick question: where is your company headquartered?",
+    "label": "other",
+    "scenario_group": "other-08"
+  },
+  {
+    "id": "oth-08-4",
+    "text": "Could someone help with this: where is your company headquartered?",
+    "label": "other",
+    "scenario_group": "other-08"
+  },
+  {
+    "id": "oth-08-5",
+    "text": "I am contacting support because where is your company headquartered.",
+    "label": "other",
+    "scenario_group": "other-08"
+  },
+  {
+    "id": "oth-09-1",
+    "text": "do you offer educational workshops?",
+    "label": "other",
+    "scenario_group": "other-09"
+  },
+  {
+    "id": "oth-09-2",
+    "text": "Hello, do you offer educational workshops. Please advise.",
+    "label": "other",
+    "scenario_group": "other-09"
+  },
+  {
+    "id": "oth-09-3",
+    "text": "Quick question: do you offer educational workshops?",
+    "label": "other",
+    "scenario_group": "other-09"
+  },
+  {
+    "id": "oth-09-4",
+    "text": "Could someone help with this: do you offer educational workshops?",
+    "label": "other",
+    "scenario_group": "other-09"
+  },
+  {
+    "id": "oth-09-5",
+    "text": "I am contacting support because do you offer educational workshops.",
+    "label": "other",
+    "scenario_group": "other-09"
+  },
+  {
+    "id": "oth-10-1",
+    "text": "can I request a feature for multiple languages?",
+    "label": "other",
+    "scenario_group": "other-10"
+  },
+  {
+    "id": "oth-10-2",
+    "text": "Hello, can I request a feature for multiple languages. Please advise.",
+    "label": "other",
+    "scenario_group": "other-10"
+  },
+  {
+    "id": "oth-10-3",
+    "text": "Quick question: can I request a feature for multiple languages?",
+    "label": "other",
+    "scenario_group": "other-10"
+  },
+  {
+    "id": "oth-10-4",
+    "text": "Could someone help with this: can I request a feature for multiple languages?",
+    "label": "other",
+    "scenario_group": "other-10"
+  },
+  {
+    "id": "oth-10-5",
+    "text": "I am contacting support because can I request a feature for multiple languages.",
+    "label": "other",
+    "scenario_group": "other-10"
+  }
+]
