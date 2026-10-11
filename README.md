@@ -1,117 +1,79 @@
-# OpenAI Decisions API benchmark
+# OpenAI Decisions API vs Responses API — benchmark
 
-A reproducible experiment comparing **POST /v1/decisions** and **POST /v1/responses** using the same model (`gpt-6-luna`) to route customer-support messages to four departments.
+A reproducible, exploratory comparison of **OpenAI's Decisions API** (`POST /v1/decisions`) and **Responses API** (`POST /v1/responses`) for classifying customer-support requests into **Billing, Technical, Shipping, or Other**, using `gpt-6-luna` for both workflows.
 
-Official docs: https://developers.openai.com/api/docs/guides/decisions
+## Results — extended benchmark (October 11, 2026)
 
-## Fast setup (Windows PowerShell)
+![Median latency comparison](assets/extended-latency.svg)
 
-Extract the ZIP, open PowerShell in the extracted `decisions_api_benchmark` folder, and run:
+| Metric | Decisions API | Responses API |
+| --- | ---: | ---: |
+| Measured requests | 200 | 200 |
+| Correct classifications | 198 | 194 |
+| Accuracy | **99.0%** | 97.0% |
+| Median latency | **126.84 ms** | 1,468.97 ms |
+| P95 latency (nearest rank) | **183.70 ms** | 2,263.81 ms |
+| API failures | 0 | 0 |
+
+**Observed median latency ratio: 11.58×** (Responses / Decisions). This measures these two *application workflows*, not universal API speed or equal internal model work.
+
+### What stood out
+
+- Both APIs classified every Billing, Technical, and Shipping example correctly. All errors were in the **Other** category (Decisions: 48/50; Responses: 44/50).
+- The APIs did not always misclassify the same examples: aggregate accuracy hides differences in error behavior.
+- The benchmark used **200 distinct message strings but only 40 underlying scenarios, each paraphrased five times**. Treat the samples as correlated—not 200 independent business situations.
+
+See [the full report](extended_report.md), [raw measurements](extended_results.csv), and [extended dataset](dataset_200.json).
+
+## Run the extended benchmark (WSL/Linux)
+
+Requires Python 3, `python3-venv`, an OpenAI API key, and available API credit.
+
+```bash
+bash run_extended.sh
+```
+
+The launcher creates a Python virtual environment if needed, asks for the API key (hidden input), and **requires typing `RUN`** before sending **400 billable requests**. It makes **no retries** and performs no warm-up requests in the extended run. **Running it again incurs new API charges and overwrites the extended result files.** Do not rerun just to view the published results.
+
+For further setup detail, see [EXTENDED_README.md](EXTENDED_README.md). Do not commit API keys.
+
+## Experiment design and interpretation
+
+- Same underlying model, four predefined categories, one measured call per API per message.
+- Decisions uses a typed `choice` interface; Responses uses structured JSON. Different output contracts and prompts are unavoidable, so the workloads are not perfectly identical.
+- Requests were measured from one environment on one occasion; network and provider conditions affect latency.
+- Synthetic labels are template-assigned and **have not been independently adjudicated**. Some category boundaries may be ambiguous.
+- Reported accuracy is conditional on successful requests; failures are counted separately. A four-percentage-point difference on correlated synthetic examples is **not proof of a general accuracy advantage**.
+- Decision confidence values are model estimates, **not calibrated probabilities**.
+- Dollar costs have not been independently compared; consult actual OpenAI Platform usage/billing.
+- Do not upload real customer personal data or confidential records for experiments without appropriate authorization.
+
+Official API documentation: https://developers.openai.com/api/docs/guides/decisions
+
+## Initial benchmark (v0.1 baseline)
+
+The first experiment used **24 unique examples × 3 repetitions per API** (144 measured calls). Both workflows classified **69/72 correctly (95.8%)**, with median latencies of **187.4 ms (Decisions)** and **1,590.3 ms (Responses)**. The initial dataset, runner and results are retained in [dataset.json](dataset.json), [benchmark.py](benchmark.py), and [results.csv](results.csv).
+
+Windows PowerShell launcher for the *initial* experiment:
 
 ```powershell
 powershell -NoProfile -ExecutionPolicy Bypass -File .\run.ps1
 ```
 
-The launcher installs packages, requests your key privately, performs a 4-request smoke check plus 2 warm-ups, then runs the 24-case 3-pass benchmark only if all smoke-check calls succeeded. API usage is billed. The key is kept only in the current process; it is not written to a file.
+Linux/WSL launcher for the *initial* experiment: `bash run.sh`. These launchers make additional paid requests.
 
-## Manual setup (Windows PowerShell)
+## Repository contents
 
-```powershell
-py -m venv .venv
-.\.venv\Scripts\Activate.ps1
-python -m pip install -r requirements.txt
-$env:OPENAI_API_KEY = 'YOUR_API_KEY'  # Set locally; never commit or share the key
-python benchmark.py --limit 2 --runs 1
-python benchmark.py --runs 3
-```
+| File | Purpose |
+| --- | --- |
+| `benchmark_extended.py`, `run_extended.sh` | Extended benchmark and one-command launcher |
+| `dataset_200.json` | 200 synthetic message strings |
+| `extended_results.csv`, `extended_report.md` | Extended raw results and summary |
+| `assets/extended-latency.svg` | Shareable GitHub chart |
+| `benchmark.py`, `dataset.json`, `results.csv` | Original baseline and data |
+| `run.sh`, `run.ps1` | Initial benchmark launchers |
+| `LICENSE` | MIT license |
 
-On macOS/Linux, use `python3 -m venv .venv`, `source .venv/bin/activate`, and `export OPENAI_API_KEY='YOUR_API_KEY'`.
+## Potential extensions
 
-Each run makes two calls per sample, plus one warm-up per API. With the 24-entry dataset and `--runs 3`, that is 146 total calls. Running this incurs API charges and requires a funded OpenAI Platform project; ChatGPT subscription access is separate.
-
-## Measurement methodology
-
-- Identical model and classification categories; Decision API uses `choice`, Responses API uses structured JSON (`text.format`). The prompts differ because the API interfaces differ, so this is an *application task comparison*, not proof of identical computational work.
-- Both endpoints get warm-up requests. Execution order is randomized with a fixed seed, and all requests run sequentially to avoid local concurrency interference.
-- CSV captures each result, latency, label, confidence from Decisions, Responses token usage, and errors. **Error rows are excluded from latency and accuracy calculations but reported separately**.
-- `accuracy` is computed only among successful calls; inspect the failure count. The 24 labels are manually assigned, and some cases are intentionally potentially ambiguous; review the gold labels before publishing conclusions.
-- The script does not claim end-to-end cost comparisons; use the actual Platform billing/usage dashboard and provider pricing. Decisions currently charges for input tokens, with caveats for regions/long context.
-- For publishable claims: scale to at least 100 manually reviewed cases, repeat 3–5 passes, record exact date, model, region, traffic conditions, sample count, accuracy, median latency, p95 latency, and failures. Avoid treating the provider's “10×” statement as your own finding.
-- Decisions' returned `confidence` and option probabilities are estimates; calibrate against labeled examples before using an automatic-routing threshold.
-
-## Files
-
-`benchmark.py`: the benchmark. `dataset.json`: illustrative labeled examples. `results.csv`: created locally by a run.
-
-## Extensions
-
-1. Add `predicate` for “Does this request indicate subscription cancellation?”
-2. Add `score` for incident priority with explicitly ordered levels.
-3. Build a threshold-based `human_review` policy and evaluate coverage versus accuracy.
-4. Move the routing capability behind a Java/Spring Boot API after establishing a baseline.
-
-Do not send customer PII or company-confidential records to third-party APIs without authorization. Only use synthetic data here.
-
-
-## Extended Benchmark — October 2026
-
-# Extended benchmark results
-
-Date (local): 2026-10-11 09:37:32 UTC
-Measured API calls: 400 (no retries; no warm-up calls)
-
-|Metric|Decisions|Responses|
-|---|---:|---:|
-|Attempted calls|200|200|
-|API failures|0|0|
-|Correct predictions|198|194|
-|Accuracy among successes|99.00%|97.00%|
-|Median latency|126.84 ms|1468.97 ms|
-|P95 latency (nearest rank)|183.70 ms|2263.81 ms|
-
-**Median latency ratio (Responses / Decisions): 11.58×**
-
-## Accuracy by category
-
-|API|Category|Correct / successful|Accuracy|
-|---|---|---:|---:|
-|decisions|billing|50/50|100.0%|
-|decisions|technical|50/50|100.0%|
-|decisions|shipping|50/50|100.0%|
-|decisions|other|48/50|96.0%|
-|responses|billing|50/50|100.0%|
-|responses|technical|50/50|100.0%|
-|responses|shipping|50/50|100.0%|
-|responses|other|44/50|88.0%|
-
-## Disagreements / misclassifications
-
-|ID|API|Gold label|Prediction|Confidence|
-|---|---|---|---|---|
-|oth-10-1|responses|other|technical||
-|oth-03-1|decisions|other|technical|0.59|
-|oth-03-3|responses|other|technical||
-|oth-03-2|responses|other|technical||
-|oth-03-4|decisions|other|technical|0.43|
-|oth-03-4|responses|other|technical||
-|oth-10-2|responses|other|technical||
-|oth-03-1|responses|other|technical||
-
-## Interpret with care
-
-- 200 distinct strings, but only 40 underlying intent scenarios paraphrased five ways: examples are correlated; do not treat this as 200 independent business situations.
-- Labels are synthetic, template-assigned and should be reviewed for ambiguity before publication.
-- One call per API per example: latency is exploratory; time-of-day, transient service conditions, network, and request structure can affect results.
-- Comparison uses different interfaces (`choice` vs structured JSON); it measures workflows, not identical internal computation.
-- Results exclude failed API calls from accuracy and latency; failures are reported separately.
-- Confidence is an estimate, not a calibrated probability; cost requires actual Platform usage records.
-- This run disables automatic retries and caps measured requests. It cannot guarantee a precise dollar cost before billing posts.
-
-
-### Limitations
-
-- 200 messages represent 40 underlying scenarios with five paraphrases each.
-- Labels are synthetic and have not been independently reviewed.
-- One request per API per message; measurements are exploratory.
-- API interfaces differ, so this is a workflow-level comparison.
-- Reproducing this experiment incurs API usage charges.
+Independently review the gold labels, test diverse real-world-like scenarios, repeat on different days, evaluate confidence calibration and human-review thresholds, and compare actual billed costs. None of these additional calls are necessary to inspect the current published results.
