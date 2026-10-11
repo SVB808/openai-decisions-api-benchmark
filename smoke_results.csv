@@ -1,0 +1,5 @@
+id,run,api,expected,prediction,latency_ms,confidence,input_tokens,output_tokens,error
+02,1,decisions,billing,billing,1021.13,0.99,,,
+01,1,responses,billing,billing,1892.59,,145,13,
+02,1,responses,billing,billing,2046.70,,146,13,
+01,1,decisions,billing,billing,131.95,1.0,,,
